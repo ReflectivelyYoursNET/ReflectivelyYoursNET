@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "RY 2-MAIN",
-    "currentPage": "index.html",
+    "currentPage": "reflective-decals-stickers.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -38,7 +38,7 @@
       ]
     },
     "versionFirst": "4.6.5",
-    "uniqCompNum": 334,
+    "uniqCompNum": 335,
     "versionPublish": "4.7.2",
     "path": "@PROJECT_PATH@",
     "screenshot": "screenshot.png",
@@ -4637,6 +4637,46 @@
         },
         {
           "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "H1": {
+              "text-align": "center",
+              "color": "#e71616"
+            },
+            ".mbr-text, .mbr-section-btn B": {
+              "color": "#d81be2"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#e4d295"
+            },
+            ".mbr-text, .mbr-section-btn I": {
+              "color": "#e4d295"
+            },
+            ".mbr-text, .mbr-section-btn FONT": {
+              "color": "#b1a374"
+            }
+          },
+          "_name": "header2",
+          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen,\n         'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#000000\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#767676\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <strong><h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">Reflective<br>Decals</h1></strong>   \n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                   \n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Day and Night Visibility<i><br></i><i>for&nbsp;</i><br>Biz-Personal-Org-Home-Gov<br>&nbsp; <font size=\"-1\">Easier ~</font>&nbsp;<font size=\"+2\"><b><font color=\"#781c6e\">BE SEEN</font></b></font>&nbsp;<font size=\"-1\">~ Sooner</font><font size=\"+2\"><b><font color=\"#781c6e\">&nbsp;&nbsp;</font></b></font><font size=\"-1\"><br></font></p><p><font size=\"+1\">\n                </font></p><div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><font size=\"+1\"><a class=\"btn btn-md btn-danger-outline\" href=\"https://mobirise.com\">Reflective Letters</a></font></div><font size=\"+1\">\n            </font></div><font size=\"+1\">\n        </font></div><font size=\"+1\">\n    </font></div><font size=\"+1\">\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</font></section>",
+          "_anchor": "header2-9a",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "qYJECck9yE",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
             "background-color": "@bgColor",
@@ -4655,11 +4695,14 @@
             }
           },
           "_name": "content6",
-          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"60\">\n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#000000\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <a href=\"reflective-decals-stickers.html\"><img src=\"@PROJECT_PATH@/assets/images/credit-cards-black-241x80.jpg\" alt=\"Mobirise\" title></a>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"><b>Reflective Decal Stickers</b>\n<br>&nbsp; ~ Durable 3M S<i>cotchlite quality</i>.<br>&nbsp; ~ Your surface is the background.<br>&nbsp; ~ \"Peel 'n stick\" and you're done.\n<br>&nbsp; ~ Stealth Black reflects off WHITE.<br><b>Versatile</b>: Put 'em anywhere.<br><b>Choices</b>: Get all the same or mix.&nbsp;</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"60\">\n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#000000\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <a href=\"reflective-decals-stickers.html\"><img src=\"@PROJECT_PATH@/assets/images/credit-cards-black-241x80.jpg\" alt=\"Mobirise\" title></a>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"><b>Reflective Decal Stickers</b>\n<br>&nbsp; ~ Durable 3M S<i>cotchlite quality</i>.<br>&nbsp; ~ Your surface is the background.<br>&nbsp; ~ \"Peel 'n stick\" and you're done.\n<br>&nbsp; ~ Stealth Black reflects off WHITE.<br><b>Versatile</b>: Put 'em anywhere.<br><b>Choices</b>: Get all the same or mix.&nbsp;</p>\n                        </div>\n                        \n    Ecwid Code Below                    \n   <div class=\"ecwid ecwid-SingleProduct-v2 ecwid-SingleProduct-v2-bordered ecwid-SingleProduct-v2-centered ecwid-Product ecwid-Product-111869739\" itemscope itemtype=\"http://schema.org/Product\" data-single-product-id=\"111869739\"><div class=\"ecwid-title\" itemprop=\"name\" content=\"Reflective Starburst\"></div><div itemtype=\"http://schema.org/Offer\" itemscope itemprop=\"offers\"><div class=\"ecwid-productBrowser-price ecwid-price\" itemprop=\"price\" content=\"7.49\"><div itemprop=\"priceCurrency\" content=\"USD\"></div></div></div><div customprop=\"options\"></div><div customprop=\"qty\"></div><div customprop=\"addtobag\"></div></div>{JS_CODE_0}{JS_CODE_1}                     \n                        \n    Ecwid Code Above                    \n                        \n                        \n                        \n                        \n                        \n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "qTrZOEHAwE",
           "_anchor": "content6-65",
           "_PHPplaceholders": [],
-          "_JSplaceholders": [],
+          "_JSplaceholders": [
+            "<script data-cfasync=\"false\" type=\"text/javascript\" src=\"https://app.ecwid.com/script.js?13412380&data_platform=singleproduct_v2\" charset=\"utf-8\"></script>",
+            "<script type=\"text/javascript\">xProduct()</script>"
+          ],
           "_protectedParams": [],
           "_global": false,
           "_once": false,
